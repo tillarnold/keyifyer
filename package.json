@@ -1,7 +1,7 @@
 {
   "name": "keyifyer",
-  "version": "0.0.0",
-  "description": "",
+  "version": "0.0.1",
+  "description": "A better way to handle key events",
   "main": "index.js",
   "scripts": {
     "test": "node test/test.js",
