@@ -1,0 +1,29 @@
+{
+  "name": "keyifyer",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test/test.js",
+    "test-coveralls": "istanbul cover test/test.js  && cat ./coverage/lcov.info | coveralls && rm -rf ./coverage",
+    "jshint": "jshint test/* index.js",
+    "coverage": "rm -rf coverage && istanbul cover test/test.js && istanbul report html && serve coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tillarnold/keyifyer"
+  },
+  "keywords": [],
+  "author": "Till Arnold",
+  "license": "MIT",
+  "devDependencies": {
+    "jshint": "^2.5.3",
+    "tape": "^3.0.0",
+    "istanbul": "~0.3.0",
+    "coveralls": "~2.11.1"
+  },
+  "dependencies": {
+    "invert-hash": "0.0.0",
+    "vkey": "^1.0.0"
+  }
+}
