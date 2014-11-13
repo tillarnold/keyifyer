@@ -7,4 +7,5 @@
 
 
 ## Release History
+* 2014-11-13   v0.1.0   Fix return value.
 * 2014-11-12   v0.0.1   Initial version.
