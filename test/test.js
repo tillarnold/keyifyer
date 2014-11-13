@@ -17,13 +17,14 @@ var keyify = keyifyer.keyify;
 
 
 test('keyify', function(t) {
-  t.plan(4);
+  t.plan(5);
   keyifyer.preventDefaultFor('<space>');
 
   var x = keyify(function(k) {
     t.equals(k.wasPressed('A'), true);
     t.equals(k.wasPressed('<tab>'), true);
     t.equals(k.isPressed('<tab>'), false);
+    return 333;
   });
 
   ee.emit('keydown', {
@@ -40,11 +41,13 @@ test('keyify', function(t) {
 
   ee.emit('keydown', {
     keyCode: 32,
-    preventDefault: function(){
+    preventDefault: function() {
       t.pass('preventDefault was called');
     }
   });
 
 
-  x();
+  var r = x();
+
+  t.equals(r, 333);
 });

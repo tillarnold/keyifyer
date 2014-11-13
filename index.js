@@ -62,8 +62,10 @@
       var args = Array.prototype.slice.call(arguments);
       args.unshift(k);
 
-      f.apply(null, args);
+      var returnValue = f.apply(null, args);
       k.reset();
+
+      return returnValue;
     };
   };
 
