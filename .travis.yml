@@ -6,3 +6,4 @@ node_js:
   - "stable"
 install: npm install
 script: npm run jshint && npm run test-coveralls
+sudo: false
