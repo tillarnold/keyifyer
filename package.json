@@ -17,10 +17,11 @@
   "author": "Till Arnold",
   "license": "MIT",
   "devDependencies": {
+    "coveralls": "~3.0.0",
+    "istanbul": "~0.4.5",
     "jshint": "^2.5.3",
-    "tape": "^3.0.0",
-    "istanbul": "~0.3.0",
-    "coveralls": "~2.11.1"
+    "serve": "^6.4.9",
+    "tape": "^4.8.0"
   },
   "dependencies": {
     "invert-hash": "0.0.0",
